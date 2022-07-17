@@ -18,7 +18,9 @@ const server = new ApolloServer({
 });
 
 //integrate our apollo server with express application as middleware
-server.applyMiddleware({app});
+server.start().then((res) => {server.applyMiddleware({app});
+app.listen({ port: 3000 }, () => console.log('nice'));
+});
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
