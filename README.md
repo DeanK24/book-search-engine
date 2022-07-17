@@ -11,8 +11,6 @@ The Book search engine is an application is leveraging the entire MERN stack and
 * [Installation](#installation)
 * [Contributing](#contributing)
 
-
-
 ## Usage
 
 This application allows to search for the books, save books to your saved book list and remove books from the saved book list.
